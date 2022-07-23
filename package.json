@@ -1,12 +1,22 @@
 {
   "name": "next-chakra-starter",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.1.0",
+  "description": "Muhammad Akmal Hisyam's personal site",
+  "author": "Muhammad Akmal Hisyam",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "eslint src --fix && yarn format",
+    "format": "prettier --write src",
+    "type-check": "tsc --noEmit",
+    "release": "standard-version",
+    "push-release": "git push --follow-tags origin main",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.2.3",
@@ -14,11 +24,29 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@types/node": "18.0.6",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
-    "eslint": "8.20.0",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
     "eslint-config-next": "12.2.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "standard-version": "^9.5.0",
     "typescript": "4.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akmalhisyammm/next-chakra-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/akmalhisyammm/next-chakra-starter/issues"
   }
 }
