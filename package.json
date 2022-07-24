@@ -2,7 +2,7 @@
   "name": "next-chakra-starter",
   "private": true,
   "version": "0.1.0",
-  "description": "Muhammad Akmal Hisyam's personal site",
+  "description": "Next.js + Chakra UI + TypeScript starter template",
   "author": "Muhammad Akmal Hisyam",
   "license": "MIT",
   "scripts": {
