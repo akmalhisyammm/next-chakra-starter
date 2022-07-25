@@ -1,21 +1,21 @@
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
   title: undefined,
-  titleTemplate: '%s | next-chakra-starter',
-  defaultTitle: 'next-chakra-starter',
+  titleTemplate: '%s | Next Chakra Starter',
+  defaultTitle: 'Next Chakra Starter',
   description: 'Next.js + Chakra UI + TypeScript starter template',
   canonical: 'https://nextchakra.akmalhisyam.my.id',
   openGraph: {
     url: 'https://nextchakra.akmalhisyam.my.id',
-    title: 'next-chakra-starter',
+    title: 'Next Chakra Starter',
     description: 'Next.js + Chakra UI + TypeScript starter template',
     images: [
       {
         url: '/og-image.png',
-        alt: 'next-chakra-starter og-image',
+        alt: 'Next Chakra Starter og-image',
       },
     ],
-    site_name: 'next-chakra-starter',
+    site_name: 'Next Chakra Starter',
   },
   twitter: {
     handle: '@akmalhisyammm',
