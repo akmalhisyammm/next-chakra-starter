@@ -5,7 +5,6 @@ import Header from './Header';
 import Footer from './Footer';
 
 type LayoutProps = {
-  title?: string;
   children: ReactNode;
 };
 
