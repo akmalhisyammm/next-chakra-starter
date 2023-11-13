@@ -1,37 +1,35 @@
-import { Button, Code, HStack, Link as ChakraLink } from '@chakra-ui/react';
+import { Box, Button, Code, HStack, Link } from '@chakra-ui/react';
 import { SiGithub } from 'react-icons/si';
-import { motion } from 'framer-motion';
 
-const CTA = () => {
+const MainCTA = () => {
   return (
-    <motion.div
-      initial={{ y: 50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ ease: 'easeOut', delay: 0.8 }}>
+    <Box textAlign="center">
       <Code colorScheme="blue">
         npx degit akmalhisyammm/next-chakra-starter {'<YOUR_APP_NAME>'}
       </Code>
 
       <HStack justifyContent="center" marginY={4}>
-        <ChakraLink
+        <Link
           href="https://github.com/akmalhisyammm/next-chakra-starter/generate"
-          _hover={{ textDecoration: 'none' }}
           isExternal>
           <Button colorScheme="blue" borderRadius="full">
             Use this template
           </Button>
-        </ChakraLink>
-        <ChakraLink
+        </Link>
+        <Link
           href="https://github.com/akmalhisyammm/next-chakra-starter"
-          _hover={{ textDecoration: 'none' }}
           isExternal>
-          <Button colorScheme="blue" variant="outline" borderRadius="full" leftIcon={<SiGithub />}>
+          <Button
+            colorScheme="blue"
+            variant="outline"
+            borderRadius="full"
+            leftIcon={<SiGithub />}>
             Open in GitHub
           </Button>
-        </ChakraLink>
+        </Link>
       </HStack>
-    </motion.div>
+    </Box>
   );
 };
 
-export default CTA;
+export default MainCTA;
