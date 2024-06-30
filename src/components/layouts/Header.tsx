@@ -18,13 +18,15 @@ const Header = () => {
       }
       backdropFilter="blur(10px)"
       position="fixed"
-      zIndex={5}>
+      zIndex={5}
+    >
       <Container
         as="nav"
         maxWidth="container.lg"
         height="full"
         padding={4}
-        centerContent>
+        centerContent
+      >
         <Box marginLeft="auto">
           <IconButton
             aria-label="Theme Toggle"

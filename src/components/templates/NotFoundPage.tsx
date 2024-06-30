@@ -12,7 +12,8 @@ const NotFoundPage = () => {
       textAlign="center"
       height="100vh"
       gap={2}
-      padding={4}>
+      padding={4}
+    >
       <CustomHeading as="h2" size={['xl', '2xl']} padding={[0, 2]}>
         404 | Not Found
       </CustomHeading>
@@ -22,7 +23,8 @@ const NotFoundPage = () => {
         href="/"
         textDecoration="underline"
         fontWeight={700}
-        padding={8}>
+        padding={8}
+      >
         Back to Home
       </Link>
     </Flex>

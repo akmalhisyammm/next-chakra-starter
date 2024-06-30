@@ -11,7 +11,8 @@ const ErrorPage = () => {
       textAlign="center"
       height="100vh"
       gap={2}
-      padding={4}>
+      padding={4}
+    >
       <CustomHeading as="h2" size={['xl', '2xl']} padding={[0, 2]}>
         500 | Error
       </CustomHeading>

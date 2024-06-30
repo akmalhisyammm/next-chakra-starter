@@ -11,19 +11,22 @@ const MainCTA = () => {
       <HStack justifyContent="center" marginY={4}>
         <Link
           href="https://github.com/akmalhisyammm/next-chakra-starter/generate"
-          isExternal>
+          isExternal
+        >
           <Button colorScheme="blue" borderRadius="full">
             Use this template
           </Button>
         </Link>
         <Link
           href="https://github.com/akmalhisyammm/next-chakra-starter"
-          isExternal>
+          isExternal
+        >
           <Button
             colorScheme="blue"
             variant="outline"
             borderRadius="full"
-            leftIcon={<SiGithub />}>
+            leftIcon={<SiGithub />}
+          >
             Open in GitHub
           </Button>
         </Link>

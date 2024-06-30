@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: '500',
 };
 
-const Error = () => {
+const _Error = () => {
   return <ErrorPage />;
 };
 
-export default Error;
+export default _Error;

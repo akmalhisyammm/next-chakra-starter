@@ -17,7 +17,8 @@ const Layout = ({ children }: LayoutProps) => {
       minHeight="100vh"
       paddingBottom={100}
       transition="0.5s ease-out"
-      backgroundColor={colorMode === 'light' ? 'gray.100' : 'gray.900'}>
+      backgroundColor={colorMode === 'light' ? 'gray.100' : 'gray.900'}
+    >
       <Header />
 
       <Container
@@ -25,7 +26,8 @@ const Layout = ({ children }: LayoutProps) => {
         position="relative"
         top={70}
         padding={4}
-        centerContent>
+        centerContent
+      >
         <Box as="main" marginY={22}>
           {children}
         </Box>
