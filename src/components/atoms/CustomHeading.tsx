@@ -18,7 +18,8 @@ const CustomHeading = ({ children, ...rest }: CustomHeadingProps) => {
           ? 'linear(to-br, blue.500, blue.600)'
           : 'linear(to-br, blue.200, blue.300)'
       }
-      {...rest}>
+      {...rest}
+    >
       {children}
     </Heading>
   );

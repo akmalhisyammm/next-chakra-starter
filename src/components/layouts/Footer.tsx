@@ -13,13 +13,15 @@ const Footer = () => {
       textAlign="center"
       borderTopWidth={1}
       borderColor={colorMode === 'light' ? 'gray.400' : 'gray.500'}
-      paddingY={4}>
+      paddingY={4}
+    >
       <Text>
         {new Date().getFullYear()} &bull;{' '}
         <Link
           href="https://akmalhisyam.my.id"
           _hover={{ color: colorMode === 'light' ? 'blue.500' : 'blue.200' }}
-          isExternal>
+          isExternal
+        >
           Muhammad Akmal Hisyam
         </Link>
       </Text>
